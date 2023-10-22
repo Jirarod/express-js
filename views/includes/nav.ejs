@@ -3,13 +3,27 @@
 <header class="main-header">
     <nav class="main-header_nav">
         <ul class="main-header_item-list">
+            <% if (activeShop) { %>
+                <li class="main-header_item act" >
+                <a href="/">Store</a>
+            </li>
+            <% } else { %>
             <li class="main-header_item">
                 <a class="active" href="/">Store</a>
             </li>
-            <li class="main-header_item">
-                <a class="active" href="/admin/add-item">Add-item</a>
+            <% } %>
+            <% if (activeAddItem) { %>
+                <li class="main-header_item act" >
+               <a href="/admin/add-item" >Add-item</a>
             </li>
+            <% } else { %>
+            <li class="main-header_item" >
+                <a class="active"  href="/admin/add-item" >Add-item</a>
+            </li>
+            <% } %>
+            
         </ul>
+
     </nav>
 </header>
 

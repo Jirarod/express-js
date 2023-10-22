@@ -4,6 +4,7 @@ exports.getAddItem = (req, res, next) => {
     res.render("add-item", {
         docTitle: "Add Item",
         formCSS: true,
+        activeShop: false,
         activeAddItem: true,
         path: "/admin/add-item",
     });
@@ -23,6 +24,7 @@ exports.getProducts = (req, res, next) => {
             productCSS: true,
             hasProduct: products.length > 0,
             activeShop: true,
+            activeAddItem: false,
             path: "/",
         });
     });

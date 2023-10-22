@@ -33,6 +33,16 @@ main {
     text-decoration: none;
     color: #fff;
 }
+.main-header_item_act
+{
+    color: #0088f7;
+}
+.main-header_item a
+{
+    text-decoration: none;
+    color: #0088f7;
+}
+
 .main-header_item a:hover,
 .main-header_item a:active,
 .main-header_item a.active {
