@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs') %>
+   <link rel="stylesheet" href="/css/store.css"/>
+</head>
+<body>
+    <%- include('includes/nav.ejs') %>
+    <main>
+        <% if (prods.length > 0) { %>
+        <h1>My Items</h1>
+        <p>List of all items...</p>
+        <div class="grid">
+            <% for (let product of prods) { %>
+                <article class="card product-item">
+                    <header class="card_header">
+                        <h1 class="product__title"><%= product.title %></h1>
+                    </header>
+                    <div class="card_image">
+                        <img
+                        src="https://m.media-amazon.com/images/I/51yzX9d-E+L._SX260_.jpg"
+                        alt="A Computer Book"
+                        />
+                    </div>
+                    <div class="card_actions">
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </article>
+            <% } %>
+        </div>
+        <% } else { %>
+            <h1>No Products</h1>
+        <% }%>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.add-item-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+.form-control {
+    margin: 1rem 0;
+}
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+.form-control input {
+    font: inherit;
+    border:1px solid #f29544;
+    border-radius: 2px;
+}
+.form-control input:focus {
+    outline-color: #bc1f66;
+}
+button {
+    font: inherit;
+    border: 1px solid #323673;
+    color:#323673;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
